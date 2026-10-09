@@ -1,0 +1,38 @@
+name: Feature request
+description: An idea or requested enhancement
+title: "[Feature]: "
+labels: ["needs-triage", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a **public** repository. Do **not** post customer data, passwords, tokens or tenant IDs.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - papiNet
+        - Other 1Vision365 app
+    validations:
+      required: true
+  - type: textarea
+    id: wish
+    attributes:
+      label: What would you like to be able to do?
+      description: Keep it under roughly 2000 characters.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why? Which problem does it solve?
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I did not include customer data, passwords, tokens or tenant IDs.
+          required: true
