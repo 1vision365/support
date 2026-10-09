@@ -12,7 +12,10 @@ body:
     attributes:
       label: Product
       options:
-        - papiNet
+        - 1Vision IoT Link
+        - 1Vision IoT-2-PrintVis Connector
+        - 1Vision IoT-2-PrintVis Adapter - ifm moneo
+        - 1Vision IoT-2-PrintVis Adapter - Moxa
         - Other 1Vision365 app
     validations:
       required: true
