@@ -19,6 +19,14 @@ body:
         - Other 1Vision365 app
     validations:
       required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: The version you are using now, if you know it.
+      placeholder: "e.g. 1.2.0.0"
+    validations:
+      required: false
   - type: textarea
     id: wish
     attributes:
@@ -38,4 +46,6 @@ body:
       label: Confirmation
       options:
         - label: I did not include customer data, passwords, tokens or tenant IDs.
+          required: true
+        - label: I understand that an automated assistant may reply and that a team member may take over.
           required: true
